@@ -1,0 +1,21 @@
+{
+  "name": "Tuấn Blogger • AI Studio",
+  "short_name": "TuanBlogger AI",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "description": "Xưởng sản xuất video hoạt họa và lồng tiếng AI chuyên nghiệp",
+  "icons": [
+    {
+      "src": "/assets/app_icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
