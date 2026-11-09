@@ -1,0 +1,15 @@
+{
+  "app_name": "TuanBlogger AI Studio",
+  "version": "4.2.3",
+  "release_date": "2026-11-10",
+  "update_channel": "stable",
+  "title": "TuanBlogger AI Studio v4.2.3 - Chính Thức (Tài Khoản tuanblogger1)",
+  "api_backend_url": "https://wooden-pattern-moves-accessing.trycloudflare.com",
+  "release_notes": [
+    "Kết nối kho lưu trữ GitHub mới chính thức: tuanblogger1/tuanblogger-ai-studio",
+    "Tự động nhận diện máy chủ AI Backend (Dynamic Tunnel Auto-Discovery)",
+    "Hỗ trợ tạo giọng đọc trực tiếp qua Google Gemini API",
+    "Khắc phục triệt để lỗi Load failed trên mọi thiết bị di động"
+  ],
+  "update_manifest_url": "https://raw.githubusercontent.com/tuanblogger1/tuanblogger-ai-studio/main/version.json"
+}
