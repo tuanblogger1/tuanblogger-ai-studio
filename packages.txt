@@ -1,0 +1,4 @@
+ffmpeg
+fonts-liberation
+fonts-noto-cjk
+curl
