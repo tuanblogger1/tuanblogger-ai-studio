@@ -11,5 +11,6 @@
     "Hỗ trợ tạo giọng đọc trực tiếp qua Google Gemini API",
     "Khắc phục triệt để lỗi Load failed trên mọi thiết bị di động"
   ],
+  "download_url": "https://github.com/tuanblogger1/tuanblogger-ai-studio/releases/download/v4.2.1/TuanBlogger_AI_Studio_v4.2.1_Portable.zip",
   "update_manifest_url": "https://raw.githubusercontent.com/tuanblogger1/tuanblogger-ai-studio/main/version.json"
 }
