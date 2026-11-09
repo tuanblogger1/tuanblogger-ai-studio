@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+
+<script>
+(function() {
+  var mem = {};
+  var memoryStorage = {
+    getItem: function(k) { return mem.hasOwnProperty(k) ? mem[k] : null; },
+    setItem: function(k, v) { mem[k] = String(v); },
+    removeItem: function(k) { delete mem[k]; },
+    clear: function() { mem = {}; },
+    key: function(i) { return Object.keys(mem)[i] || null; },
+    get length() { return Object.keys(mem).length; }
+  };
+  try {
+    var test = '__t__';
+    window.localStorage.setItem(test, test);
+    window.localStorage.removeItem(test);
+  } catch (e) {
+    try {
+      Object.defineProperty(window, 'localStorage', {
+        value: memoryStorage,
+        configurable: true,
+        enumerable: true,
+        writable: true
+      });
+    } catch (e2) {
+      window.localStorage = memoryStorage;
+    }
+  }
+})();
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tuấn Blogger • Xưởng phim AI 3D</title>
@@ -7620,7 +7651,7 @@
       window.updateStudioStopControls();
       restoredScriptPoller = setInterval(async () => {
         try {
-          const response = await fetch(resolveApiUrl(`/api/video-status?job_id=${encodeURIComponent(job.job_id || job.id || request.id)}`);
+          const response = await fetch(resolveApiUrl(`/api/video-status?job_id=${encodeURIComponent(job.job_id || job.id || request.id)}`));
           const state = await response.json();
           if (!isCurrentStudioRequest(request)) return;
           if (state.state === 'completed') {
@@ -8058,7 +8089,7 @@
     // =========================================================================
     // TUAN BLOGGER CLOUD & HYBRID API ROUTER + DYNAMIC BACKEND AUTO-DISCOVERY
     // =========================================================================
-    let currentApiBaseUrl = localStorage.getItem('studio_backend_url') || 'https://wooden-pattern-moves-accessing.trycloudflare.com';
+    
 
     async function syncActiveBackendUrl() {
       const host = window.location.hostname;
