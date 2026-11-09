@@ -1174,7 +1174,7 @@
     <!-- Top Bar -->
     <div class="top-bar">
       <div class="glass-card brand-pill interactive" style="display: flex; align-items: center; gap: 10px;">
-        <img src="https://raw.githubusercontent.com/tuanblogger1/tuanblogger-ai-studio/main/assets/app_icon.png" alt="TuanBlogger AI Studio" style="width: 38px; height: 38px; border-radius: 9px; box-shadow: 0 0 15px rgba(56, 189, 248, 0.6); flex-shrink: 0; object-fit: cover;">
+        <img src="https://cdn.jsdelivr.net/gh/tuanblogger1/tuanblogger-ai-studio@main/assets/app_icon.png" alt="TuanBlogger AI Studio" style="width: 38px; height: 38px; border-radius: 9px; box-shadow: 0 0 15px rgba(56, 189, 248, 0.6); flex-shrink: 0; object-fit: cover;">
         <div>
           <span class="brand-title">TUẤN BLOGGER • AI STUDIO</span>
           <span class="brand-sub">Một ý tưởng · Cả đội cùng sáng tạo</span>
@@ -1516,8 +1516,12 @@
           <div>
             <label style="font-size: 12px; font-weight: 700; color: #94a3b8; display: block; margin-bottom: 6px;">🎙️ Chọn Giọng Đọc AI:</label>
             <select id="tts-select-voice" class="form-select" style="width: 100%; padding: 9px 12px; background: #0f172a; border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 8px; color: #fff; font-size: 13px;">
+              <optgroup label="🆓 Giọng Miễn Phí 100% Không Giới Hạn (KHÔNG CẦN API KEY - Chạy Ngay)">
+                <option value="vi-VN-NamMinhNeural-Male" selected>🎙️ Nam Minh (Nam Tự Nhiên, Trầm Ấm - Miễn Phí 100% Không Cần API)</option>
+                <option value="vi-VN-HoaiMyNeural-Female">🌸 Hoài My (Nữ Nhẹ Nhàng, Truyền Cảm - Miễn Phí 100% Không Cần API)</option>
+              </optgroup>
               <optgroup label="👑 Giọng Adam ElevenLabs Cloud (Chuẩn TikTok 100% - Siêu Cảm Xúc)">
-                <option value="elevenlabs:pNInz6obpgDQGcFmaJgB:Adam" selected>👑 Adam ElevenLabs Original (Trầm Ấm, Nhấn Nhá Kịch Tính - Cần API Key)</option>
+                <option value="elevenlabs:pNInz6obpgDQGcFmaJgB:Adam">👑 Adam ElevenLabs Original (Trầm Ấm, Nhấn Nhá Kịch Tính - Cần API Key)</option>
               </optgroup>
               <optgroup label="⚡ Giọng Adam On-Device (Chạy Trên Máy Tính)">
                 <option value="adam_rvc:Adam">⚡ Adam RVC v2 Deep RMVPE+ (Miễn phí 100% - Không tốn API)</option>
@@ -1529,10 +1533,6 @@
                 <option value="gemini:Aoede-Breezy">🌸 gemini:Aoede (Nữ nhẹ nhàng, truyền cảm, ấm áp)</option>
                 <option value="gemini:Kore-Firm">🌸 gemini:Kore (Nữ tự tin, chuyên nghiệp, đĩnh đạc)</option>
                 <option value="gemini:Leda-Youthful">🌸 gemini:Leda (Nữ tươi sáng, ngọt ngào, gần gũi)</option>
-              </optgroup>
-              <optgroup label="🌐 Giọng Đọc Tiêu Chuẩn Edge-TTS (Miễn Phí 100%)">
-                <option value="vi-VN-NamMinhNeural-Male">🎙️ vi-VN-NamMinh (Nam chuẩn thanh lịch)</option>
-                <option value="vi-VN-HoaiMyNeural-Female">🌸 vi-VN-HoaiMy (Nữ truyền cảm ấm áp)</option>
               </optgroup>
             </select>
           </div>
@@ -1744,8 +1744,12 @@
             <div class="form-group">
               <label class="form-label">🎙️ 7. Giọng đọc thuyết minh</label>
               <select class="form-select" id="inp-voice">
+                <optgroup label="🆓 Giọng Miễn Phí 100% Không Giới Hạn (KHÔNG CẦN API KEY - Tạo Video Ngay)">
+                  <option value="vi-VN-NamMinhNeural-Male" selected>🎙️ Nam Minh (Nam Tự Nhiên, Trầm Ấm - Miễn Phí 100% Không Cần API)</option>
+                  <option value="vi-VN-HoaiMyNeural-Female">🌸 Hoài My (Nữ Nhẹ Nhàng, Truyền Cảm - Miễn Phí 100% Không Cần API)</option>
+                </optgroup>
                 <optgroup label="👑 Giọng Adam ElevenLabs Cloud (Chuẩn TikTok 100% - Siêu Cảm Xúc)">
-                  <option value="elevenlabs:pNInz6obpgDQGcFmaJgB:Adam" selected>👑 Adam ElevenLabs Original (Trầm Ấm, Nhấn Nhá Kịch Tính - Cần API Key)</option>
+                  <option value="elevenlabs:pNInz6obpgDQGcFmaJgB:Adam">👑 Adam ElevenLabs Original (Trầm Ấm, Nhấn Nhá Kịch Tính - Cần API Key)</option>
                 </optgroup>
                 <optgroup label="⚡ Giọng Adam On-Device (Chạy Trên Máy Tính)">
                   <option value="adam_rvc:Adam">⚡ Adam RVC v2 Deep RMVPE+ (Miễn phí 100% - Không tốn API)</option>
@@ -1757,10 +1761,6 @@
                   <option value="gemini:Aoede-Breezy">🌸 gemini:Aoede (Nữ nhẹ nhàng, truyền cảm, ấm áp)</option>
                   <option value="gemini:Kore-Firm">🌸 gemini:Kore (Nữ tự tin, chuyên nghiệp, đĩnh đạc)</option>
                   <option value="gemini:Leda-Youthful">🌸 gemini:Leda (Nữ tươi sáng, ngọt ngào, gần gũi)</option>
-                </optgroup>
-                <optgroup label="🌐 Giọng Đọc Tiêu Chuẩn Edge-TTS">
-                  <option value="vi-VN-NamMinhNeural-Male">🎙️ vi-VN-NamMinh (Nam tiêu chuẩn)</option>
-                  <option value="vi-VN-HoaiMyNeural-Female">🌸 vi-VN-HoaiMy (Nữ truyền cảm)</option>
                 </optgroup>
               </select>
             </div>
@@ -8314,13 +8314,18 @@
       const elevenKey = localStorage.getItem('elevenlabs_api_key');
       const select = document.getElementById('tts-select-voice');
       const inpVoice = document.getElementById('inp-voice');
-      if (select && geminiKey && !elevenKey) {
-        if (select.value.startsWith('elevenlabs:')) {
+      if (!elevenKey && !geminiKey) {
+        if (select && (select.value.startsWith('elevenlabs:') || select.value.startsWith('gemini:'))) {
+          select.value = 'vi-VN-NamMinhNeural-Male';
+        }
+        if (inpVoice && (inpVoice.value.startsWith('elevenlabs:') || inpVoice.value.startsWith('gemini:'))) {
+          inpVoice.value = 'vi-VN-NamMinhNeural-Male';
+        }
+      } else if (geminiKey && !elevenKey) {
+        if (select && select.value.startsWith('elevenlabs:')) {
           select.value = 'gemini:Aoede-Breezy';
         }
-      }
-      if (inpVoice && geminiKey && !elevenKey) {
-        if (inpVoice.value.startsWith('elevenlabs:')) {
+        if (inpVoice && inpVoice.value.startsWith('elevenlabs:')) {
           inpVoice.value = 'gemini:Aoede-Breezy';
         }
       }
